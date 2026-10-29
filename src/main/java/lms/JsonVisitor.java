@@ -33,11 +33,11 @@ public final class JsonVisitor implements LmsVisitor<Void> {
     public Void visit(Program n) { open("Program", n.name()); return null; }
     public Void visit(Course n) {
         open("Course", n.name());
-        json.insert(json.length() - 12, ",\"credits\":" + n.credits());
         return null;
     }
     public Void visit(Lecture n) { leaf("Lecture", n.name(), n.minutes()); return null; }
     public Void visit(Lab n) { leaf("Lab", n.name(), n.minutes()); return null; }
     public Void visit(Exam n) { leaf("Exam", n.name(), n.minutes()); return null; }
+    public Void visit(Assignment n) { leaf("Assignment", n.name(), n.minutes()); return null; }
     public void endContainer() { json.append("]}"); first.pop(); }
 }

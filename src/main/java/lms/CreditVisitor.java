@@ -8,4 +8,5 @@ public final class CreditVisitor implements LmsVisitor<Void> {
     public Void visit(Lecture n) { return null; }
     public Void visit(Lab n) { return null; }
     public Void visit(Exam n) { return null; }
+    public Void visit(Assignment n) { return null; }
 }

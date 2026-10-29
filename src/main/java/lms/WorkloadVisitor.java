@@ -10,4 +10,5 @@ public final class WorkloadVisitor implements LmsVisitor<Void> {
     public Void visit(Lecture n) { minutes += n.minutes(); activities++; return null; }
     public Void visit(Lab n) { minutes += n.minutes(); activities++; return null; }
     public Void visit(Exam n) { minutes += n.minutes(); activities++; return null; }
+    public Void visit(Assignment n) { minutes += n.minutes(); activities++; return null; }
 }

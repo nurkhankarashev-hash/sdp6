@@ -6,5 +6,6 @@ public interface LmsVisitor<R> {
     R visit(Lecture node);
     R visit(Lab node);
     R visit(Exam node);
+    R visit(Assignment node);
     default void endContainer() {}
 }
