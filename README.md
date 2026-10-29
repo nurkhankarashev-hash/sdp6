@@ -1,4 +1,5 @@
-# Assignment 6 — University LMS
+# Assignment 6 — University 
+**Karashev Nurkhan SE-2540**
 
 Java 17, Observer + Visitor, JUnit 5. No external runtime libraries.
 
@@ -48,7 +49,3 @@ The number after `Main` selects producer thread count (minimum 3). Use `mvn test
 - a 4-thread × 1,000 event stress test, expecting exactly 4,000 notifications;
 - unsubscribe/subscribe inside a handler;
 - only the related course being inspected.
-
-## UML
-
-See `UML.md` for a class diagram (Mermaid). Git history is included in the ZIP (`.git`).
