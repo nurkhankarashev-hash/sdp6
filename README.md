@@ -40,7 +40,10 @@ The number after `Main` selects producer thread count (minimum 3). Use `mvn test
 
 1. `Add JSON visitor without modifying any element class`: only `src/main/java/lms/JsonVisitor.java` was added. New operations are cheap with Visitor.
 2. `Add Assignment element and update every visitor`: `Assignment.java`, `LmsVisitor.java`, `CreditVisitor.java`, `WorkloadVisitor.java`, `ExamFilterVisitor.java`, `JsonVisitor.java` changed. New element types are expensive because all visitors must handle them.
-
+## UML Diagramma
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
 ## Tests
 
 `src/test/java/lms/LmsTest.java` has **21 tests**, including:
