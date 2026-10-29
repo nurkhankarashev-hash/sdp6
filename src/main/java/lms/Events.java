@@ -7,7 +7,7 @@ public final class Events {
     private Events() {}
 
     public enum Type { GRADE, DEADLINE, REPORT }
-    public record Event(Type type, String course, String value) {}
+    public record Event<T>(Type type, String course, T value) {}
     public interface Observer<T> { void onEvent(Event<T> event); }
     public interface Subject<T> {
         void subscribe(Type type, Observer<T> listener);
