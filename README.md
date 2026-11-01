@@ -52,3 +52,14 @@ The number after `Main` selects producer thread count (minimum 3). Use `mvn test
 - a 4-thread × 1,000 event stress test, expecting exactly 4,000 notifications;
 - unsubscribe/subscribe inside a handler;
 - only the related course being inspected.
+
+## Test Results
+
+Tests run: 21
+Failures: 0
+Errors: 0
+Skipped: 0
+
+BUILD SUCCESS
+
+**Concurrency:** The program uses ExecutorService with at least 3 producer threads. The thread count is configurable. Future.get() checks task errors. The program waits for tasks to finish and shuts down the executor.
